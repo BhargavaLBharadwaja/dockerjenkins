@@ -2,8 +2,8 @@ pipeline{
     agent any
     
     environment{
-        DOCKER_IMAGES:"bhargavalb/my-python-appj"
-        DOCKER_TAG:"latest"
+        DOCKER_IMAGES="bhargavalb/my-python-appj"
+        DOCKER_TAG="latest"
         }
     stages{
         
