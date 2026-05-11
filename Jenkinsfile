@@ -35,7 +35,7 @@ pipeline{
                   steps{
                        sh '''
                        docker stop myapp-container || true
-                       docker run myapp-container  || true
+                       docker rm myapp-container  || true
                        docker run -d -p 5000:5000 --name myapp-container $DOCKER_IMAGE:$DOCKER_TAG
                        '''
                        }
